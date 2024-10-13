@@ -15,7 +15,7 @@ import React from 'react'
 // } from "../../../../components/ui/alert-dialog"
 import GlobalApi from '../../../_services/GlobalApi'
 import { Toaster } from '../../../../components/ui/sonner'
-
+import {Toaster} from './ui';
 
 function BookingHistoryList({bookingHistory,type}) {
   
