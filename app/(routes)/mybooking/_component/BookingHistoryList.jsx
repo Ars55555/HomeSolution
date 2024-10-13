@@ -14,7 +14,7 @@ import React from 'react'
 //   AlertDialogTrigger,
 // } from "../../../../components/ui/alert-dialog"
 import GlobalApi from '../../../_services/GlobalApi'
-import { toast } from '../../../../components/ui/sonner'
+import { toaster } from '../../../../components/ui/sonner'
 
 
 function BookingHistoryList({bookingHistory,type}) {
@@ -24,10 +24,10 @@ function BookingHistoryList({bookingHistory,type}) {
       GlobalApi.deleteBooking(booking.id).then(resp=>{
         if(resp)
         {
-          toast('Booking Delete Successfully!')
+          toaster('Booking Delete Successfully!')
         }
       },(e)=>{
-        toast('Error while canceling booking!')
+        toaster('Error while canceling booking!')
       })
   }
   
